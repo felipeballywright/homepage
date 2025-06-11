@@ -1,5 +1,67 @@
 /* styles.css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --dark-blue: rgb(17, 24, 40);
+  --gray-blue: rgb(29, 41, 55);
+}
+
 body {
-    background-color: rebeccapurple;
-  }
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+/* FOOTER */
+
+#header{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container{
+  width: 25rem;
+  height: 25rem;
+  background-image: url('/Users/imac/Items/CODE/homepage/Images/old_man.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.page-title{
+  font-size: 3rem;
+}
+
+.about-container{
+  background-color: var(--gray-blue);
+  max-width: 50rem;
+  max-height: 20rem;
+  padding: 2rem;
+}
+
+.title-text{
+  font-size: 2rem;
+}
+
+.about-container .title-text{
+  margin-bottom: 1.5rem;
+}
+
+
   
