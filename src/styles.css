@@ -15,6 +15,7 @@ html {
   --white: rgb(255, 255, 255);
   --dark-blue: rgb(17, 24, 40);
   --gray-blue: rgb(29, 41, 55);
+  --medium-blue: rgb(21, 28, 44);
 }
 
 body {
@@ -32,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 5rem;
+  background: linear-gradient(50deg, var(--medium-blue) 50%, var(--dark-blue) 50%);
 }
 
 .image-container{
@@ -56,6 +57,7 @@ body {
   max-width: 50rem;
   min-height: 20rem;
   padding: 2rem;
+  line-height: 2.2rem;
 }
 
 .title-text{
@@ -73,14 +75,16 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 2% 0;
 }
 
 .project-container{
   width: 100%;
-  padding: 2rem 20%;
+  padding: 2% 20%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   gap: 2rem;
+  line-height: 2.2rem;
 }
 
 .project{
@@ -97,5 +101,50 @@ body {
 }
 
 .project-text{
-  padding: 5%;
+  padding: 3% 5% 5% 5%;
+}
+
+.project-title{
+  margin-bottom: 2%;
+}
+
+/* FOOTER */
+
+#footer{
+  background-color: var(--gray-blue);
+  display: flex;
+  justify-content: center;
+  padding: 2% 20%;
+}
+
+.contact-container{
+  margin-right: 5%;
+}
+
+.contact-container .title-text,
+.contact-container .contact-text{
+  margin-bottom: 8%;
+}
+
+.contact-image{
+  min-width: 20rem;
+  min-height: 20rem;
+  background-image: url('/Users/imac/Items/CODE/homepage/Images/old_man.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.contact-icon-text{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.contact-icon-text i{
+  margin-right: 2.5%;
 }
