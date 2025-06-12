@@ -24,17 +24,20 @@ body {
   color: var(--white);
 }
 
-/* FOOTER */
+/* HEADER */
 
 #header{
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 
 .image-container{
-  width: 25rem;
-  height: 25rem;
+  min-width: 25rem;
+  min-height: 25rem;
   background-image: url('/Users/imac/Items/CODE/homepage/Images/old_man.jpg');
   background-size: cover;
   background-position: center;
@@ -45,23 +48,54 @@ body {
 }
 
 .page-title{
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .about-container{
   background-color: var(--gray-blue);
   max-width: 50rem;
-  max-height: 20rem;
+  min-height: 20rem;
   padding: 2rem;
 }
 
 .title-text{
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .about-container .title-text{
   margin-bottom: 1.5rem;
 }
 
+/* MAIN */
 
-  
+#main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container{
+  width: 100%;
+  padding: 2rem 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  gap: 2rem;
+}
+
+.project{
+  background-color: var(--gray-blue);
+}
+
+.project-image-1{
+  background-image: url('/Users/imac/Items/CODE/homepage/Images/project_1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 70rem;
+  height: 15rem;
+}
+
+.project-text{
+  padding: 5%;
+}
